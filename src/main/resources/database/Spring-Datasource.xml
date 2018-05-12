@@ -1,0 +1,16 @@
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<!-- ec2-18-221-129-124.us-east-2.compute.amazonaws.com -->
+		<!-- <property name="url" value="jdbc:mysql://ec2-18-219-11-135.us-east-2.compute.amazonaws.com/click" /> -->
+		<property name="url" value="jdbc:mysql://localhost:3306/click" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+
+</beans>
